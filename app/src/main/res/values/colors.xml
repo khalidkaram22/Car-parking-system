@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+<!-- color pattern
+6D91C6
+E3DFDF
+-->
+    <color name="background_color">#E3DFDF</color>
+    <color name="button_color">#6C63FF</color>
+    <color name="new_blue_color">#54B8F1</color>
+    <color name="spotsnum_color">#6D91C6</color>
+
+
+
+    <color name="general_blue">#1441BE</color>
+    <color name="light_blue">#1B56FD</color>
+    <color name="dark_blue">#001756</color>
+    <color name="gray_text_color">#666464</color>
+    <color name="red">#BE1425</color>
+    <color name="profile_o">#253873</color>
+    <color name="gray_skip">#919191</color>
+
+
+
+    <color name="bottom_nav_bg">#C3C3C3</color>
+    <color name="item_selected_nav">#BE1425</color>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="8dp"
+    tools:context=".GetStartFragment">
+
+
+    <TextView
+        android:id="@+id/getstart_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text=" Welcome to our app "
+        android:textColor="@color/general_blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/getstart_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_image"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/getstart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getstart_header"
+        app:layout_constraintBottom_toTopOf="@id/getstrat_btn"/>
+
+
+
+    <Button
+        android:id="@+id/getstrat_btn"
+        style="@style/button_style_2"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:text="Get Start"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/general_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getstart_img"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

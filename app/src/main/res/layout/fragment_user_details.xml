@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_color"
+    tools:context=".UserDetailsFragment">
+
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_marginStart="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set your info :  "
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/button_color"
+        android:textSize="24sp"
+        />
+
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="44dp"
+        android:layout_height="50dp"
+        android:hint="Name : user name"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+
+
+    <EditText
+        android:id="@+id/phone_et"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="44dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Phone : 01########"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+
+
+    <EditText
+        android:id="@+id/details_platenum_et"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="44dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint=" plateNum : cm"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/details_card_num_et"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="50dp"
+        android:hint="cardNumber : xxx-xxx-xxx"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_details_bnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        style="@style/button_style2"
+        android:text="apply" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        style="@style/button_style2"
+        android:layout_margin="16dp"
+        android:text="skip" />
+
+</LinearLayout>

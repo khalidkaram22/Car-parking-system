@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PaymentFragment">
+
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/general_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="payment"
+        android:textColor="@color/general_blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/label_card_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Enter Your Card Number"
+        android:textColor="@color/general_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_payment" />
+
+    <AutoCompleteTextView
+        android:id="@+id/pay_card_num_et"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/edittext_background"
+        android:hint="cardNumber : xxx-xxx-xxx"
+        android:inputType="number"
+        android:maxLength="12"
+        android:textColorHint="@color/gray_text_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_card_number" />
+
+    <TextView
+        android:id="@+id/label_security_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter the security Number"
+        android:textColor="@color/general_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pay_card_num_et" />
+
+    <EditText
+        android:id="@+id/security_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/edittext_background"
+        android:hint="security Number : xxxxx"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColorHint="@color/gray_text_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_security_code" />
+
+    <TextView
+        android:id="@+id/label_expiration_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter Card Expiration date"
+        android:textColor="@color/general_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/security_code" />
+
+    <EditText
+        android:id="@+id/expiration_day"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="  mm  "
+        android:inputType="date"
+        android:maxLength="2"
+        android:textColorHint="@color/gray_text_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_expiration_date" />
+
+    <EditText
+        android:id="@+id/expiration_month"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint=" yy "
+        android:inputType="date"
+        android:maxLength="2"
+        android:textColorHint="@color/gray_text_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/expiration_day"
+        app:layout_constraintTop_toBottomOf="@id/label_expiration_date" />
+
+    <Button
+        android:id="@+id/check_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_background"
+        android:text="check out"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/general_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expiration_day" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
