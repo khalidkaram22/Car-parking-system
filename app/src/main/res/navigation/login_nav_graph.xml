@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/getStartFragment">
+    <fragment
+        android:id="@+id/getStartFragment"
+        android:name="com.example.carparkingsystem.GetStartFragment"
+        android:label="fragment_get_start"
+        tools:layout="@layout/fragment_get_start" >
+        <action
+            android:id="@+id/action_getStartFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_getStartFragment_to_tourFragment"
+            app:destination="@id/tourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.carparkingsystem.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminLoginFragment2"
+            app:destination="@id/adminLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.carparkingsystem.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tourFragment"
+        android:name="com.example.carparkingsystem.TourFragment"
+        android:label="fragment_tour"
+        tools:layout="@layout/fragment_tour" >
+        <action
+            android:id="@+id/action_tourFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.example.carparkingsystem.AdminLoginFragment"
+        android:label="fragment_admin_login"
+        tools:layout="@layout/fragment_admin_login" >
+        <action
+            android:id="@+id/action_adminLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

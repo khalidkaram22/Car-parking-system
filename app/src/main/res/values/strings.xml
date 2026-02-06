@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Car Parking System</string>
+
+    <string name="Login_header">Welcome Back To Our App!</string>
+    <string name="signup_header">Welcome To Our App!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spots_header">Parking info</string>
+    <string name="admin_header">Welcome Admin!</string>
+
+
+    <string name="admin_Login_header">Login as Admin!</string>
+    <string name="admin_hello_blank_fragment">Hello blank fragment</string>
+    <string name="admin_spots_header">Parking info</string>
+    <string name="admin_admin_header">Welcome Admin!</string>
+
+
+    <string name="tour_1_text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+ literature from 45 BC, making it over 2000 years old. Richard McClintock   </string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+</resources>

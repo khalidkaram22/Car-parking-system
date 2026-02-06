@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/dark_blue"
+            tools:ignore="MissingConstraints" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/person_img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/profile_o"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_ic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/backgroundImage"
+            app:shapeAppearanceOverlay="@style/CircleImageView"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/header_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/general_blue"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/person_img"
+            app:layout_constraintStart_toStartOf="@id/person_img"
+            app:layout_constraintTop_toBottomOf="@id/person_img" />
+
+
+        <TextView
+            android:id="@+id/header_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="UserName@gmail.com"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_user_name" />
+
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="16dp"
+            android:text="Name : "
+            android:textColor="@color/general_blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_email" />
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/name_tv"
+            app:layout_constraintStart_toEndOf="@id/name_tv"
+            app:layout_constraintTop_toTopOf="@id/name_tv" />
+
+
+        <!--    email edit text (not important)-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/email_tv"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="16dp"-->
+        <!--        android:paddingLeft="16dp"-->
+        <!--        android:text="Email : "-->
+        <!--        android:textSize="24sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/name_tv" />-->
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/email_et"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:hint="User Email"-->
+        <!--        android:padding="6dp"-->
+        <!--        app:layout_constraintBottom_toBottomOf="@id/email_tv"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/email_tv"-->
+        <!--        app:layout_constraintTop_toTopOf="@id/email_tv" />-->
+
+
+        <TextView
+            android:id="@+id/phone_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="phone : "
+            android:textColor="@color/general_blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_et" />
+
+        <EditText
+            android:id="@+id/phone_number_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User phone"
+            android:padding="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/phone_number_tv"
+            app:layout_constraintStart_toEndOf="@id/phone_number_tv"
+            app:layout_constraintTop_toTopOf="@id/phone_number_tv" />
+
+        <TextView
+            android:id="@+id/card_iso_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="card details :"
+            android:textColor="@color/general_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/name_tv"
+            app:layout_constraintTop_toBottomOf="@+id/phone_number_tv" />
+
+
+        <View
+            android:id="@+id/card_iso"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="24dp"
+            android:background="@color/dark_blue"
+            app:layout_constraintTop_toBottomOf="@+id/card_iso_tv"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/plate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="plate Number : "
+            android:textColor="@color/general_blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_iso" />
+
+        <EditText
+            android:id="@+id/plate_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Car Plate"
+            android:padding="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/plate_tv"
+            app:layout_constraintStart_toEndOf="@id/plate_tv"
+            app:layout_constraintTop_toTopOf="@id/plate_tv" />
+
+
+        <TextView
+            android:id="@+id/card_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="card Number : "
+            android:textColor="@color/general_blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plate_tv" />
+
+        <EditText
+            android:id="@+id/card_num_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            android:padding="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/card_num_tv"
+            app:layout_constraintStart_toEndOf="@id/card_num_tv"
+            app:layout_constraintTop_toTopOf="@id/card_num_tv" />
+
+
+        <Button
+            android:id="@+id/apply_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="apply changes"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/general_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_num_tv" />
+
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:drawableLeft="@drawable/logout_ic"
+            android:text="Log Out"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/red"
+            app:drawableTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/card_num_tv"
+            app:layout_constraintTop_toBottomOf="@+id/apply_change_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
